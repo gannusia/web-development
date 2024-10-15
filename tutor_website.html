@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call" />
+    <title>Репетитор з музики - Марія Тібірькова</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: black;/*#e2c79f;*/
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        header a {
+            color: white; /*#333;*/
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display:
+        }
+        .services, .formats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service, .format {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 250px;
+            text-align: left;
+        }
+        .formats .format {
+            border-radius: 50%;
+            background-color: #c0cfb2;
+            max-width: none;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .service:nth-child(1) {
+            background-color: #DFC49B; /*#f5e6d7;*/
+        }
+        .service:nth-child(2) {
+            background-color: #c0cfb2; /*#f2d3b5;*/
+        }
+        .service:nth-child(3) {
+            background-color: 	#DFC49B; /*#ebc39a;*/
+        }
+        .service:nth-child(4) {
+            background-color: #c0cfb2; /*#e5b282;*/
+        }
+        .contact-info {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .footer {
+            text-align: left;
+            margin: 0 auto;
+        }
+        .footer {
+            background-color: #e2c79f;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        .footer p, .footer a {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #333;
+        }
+        .footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-icons a {
+            font-size: 30px; /* Збільшує розмір іконок */
+            margin: 10px; /* Відстань між іконками */
+        }
+        #signup {
+            background-color: #DFC49B; /*#f5e6d7;*/ /* Світло коричнево-жовтий фон */
+            padding: 50px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        hr {
+            border: 1px solid #333;
+        }
+        .map {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .photo-gallery {
+            padding: 20px 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+            }
+            header nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">Про себе</a>
+            <a href="#services">Обирай свій напрям</a>
+            <a href="#formats">Формати навчання</a>
+            <a href="#signup">Записатись на заняття</a>
+            <a href="#location">Місцерозташування</a>
+        </nav>
+    </header>
+    <section id="about" class="section about">
+        <img src="https://i.imgur.com/749NbBM.jpeg" alt="Марія Тібірькова">
+        <div>
+            <h2>Марія Тібірькова</h2>
+            <p>Займаюся музикою з 5 років. Закінчувала спеціалізовану музичну школу ім. М.В. Лисенко у м. Київ.<br>Зараз навчаюсь на магістратурі в Луганській академії за спеціальністю естрадний вокал.</p>
+        </div>
+    </section>
+    <section class="photo-gallery section">
+        <!-- <h2>Галерея</h2> -->
+        <div class="gallery">
+            <img src="https://i.imgur.com/yF4ApoW.jpeg" alt="Singing">
+            <img src="https://i.imgur.com/8MLp0mV.jpeg" alt="Maria Singing">
+            <img src="https://i.imgur.com/GemV8JU.jpeg" alt="Guitar">
+            <img src="https://i.imgur.com/X1vXea4.jpeg" alt="Maria Guitar">
+        </div>
+    </section>
+    <section id="services" class="section">
+        <h2>Обирай свій напрям</h2>
+        <p>Я визначу Ваш рівень підготовки та запропоную Вам індивідуальну програму, виходячи з Ваших цілей та уподобань.</p>
+        <div class="services">
+            <div class="service">
+                <h3>Фортепіано</h3>
+                <ul>
+                    <li>Постановка рук/посадка за інструментом</li>
+                    <li>Розвиток моторики пальців</li>
+                    <li>Розвиток слуху, відчуття ритму</li>
+                    <li>Сольфеджіо/музична теорія</li>
+                    <li>Читання нот з листа/гра "з рук"</li>
+                    <li>Освоєння бажаних технік гри</li>
+                    <li>Імпровізація/акомпанемент</li>
+                    <li>Вивчення музики із улюблених фільмів</li>
+                    <li>Робота з вашим репертуаром</li>
+                </ul>
+                <hr>
+                <p><i>Урок фортепіано складається з:</i></p>
+                <ul>
+                    <li>технічних та практичних вправ для лівої та правої руки (10 хв)</li>
+                    <li>засвоєння теоретичної бази ( 15 хв)</li>
+                    <li>розбір та вивчення пісні (25 хв)</li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3>Вокал</h3>
+                <ul>
+                    <li>Постановка дихання</li>
+                    <li>Освоєння вокальних прийомів/технік</li>
+                    <li>Розвиток слуху, відчуття ритму</li>
+                    <li>Розширення діапазону, розвиток сили голосу</li>
+                    <li>Робота з репертуаром</li>
+                    <li>Імпровізація</li>
+                </ul>
+                <hr>
+                <p><i>Урок вокалу складається з:</i></p>
+                <ul>
+                    <li>дихальних вправ (5 хв)</li>
+                    <li>розспівок (20 хв)</li>
+                    <li>розбір та вивчення пісні (25 хв)</li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3>Гітара</h3>
+                <ul>
+                    <li>Постановка рук/посадка за інструментом</li>
+                    <li>Освоєння бажаних технік гри</li>
+                    <li>Акорди, перебори, рифи, бої</li>
+                    <li>Правильне звуковидобування</li>
+                    <li>Розвиток слуху, відчуття ритму</li>
+                    <li>Читання табулатури/нот з листа</li>
+                    <li>Робота з репертуаром</li>
+                </ul>
+                <hr>
+                <p><i>Урок гітари складається з:</i></p>
+                <ul>
+                    <li>розтяжки лівої та правої руки  (10 хв)</li>
+                    <li>засвоєння теоретичної бази ( 15 хв)</li>
+                    <li>розбір та вивчення пісні (25 хв)</li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3>Сольфеджіо</h3>
+                <div class="solf-items">
+                    <p>Теорія музики з нуля:</p>
+                    <ul>
+                        <li>Вивчення нотної грамоти</li>
+                        <li>Основи музичної термінології</li>
+                        <li>Інтервали, акорди, тональності</li>
+                    </ul>
+                </div>
+                <div class="solf-items">
+                    <p>Розвиток слуху, відчуття ритму:</p>
+                    <ul>
+                        <li>Вправи на слухове розпізнавання інтервалів і акордів</li>
+                        <li>Спів по нотах та на слух</li>
+                        <li>Відтворення ритмічних патернів</li>
+                        <li>Розпізнавання гармонічних послідовностей</li>
+                    </ul>
+                </div>
+                <div class="solf-items">
+                    <p>Основи гармонії:</p>
+                    <ul>
+                        <li>Поняття тоніки, субдомінанти та домінанти</li>
+                        <li>Розуміння тризвуків та їх будови</li>
+                        <li>Побудова простих гармонійних послідовностей</li>
+                    </ul>
+                </div>
+                <div class="solf-items">
+                    <p>Акомпанемент:</p>
+                    <ul>
+                        <li>Створення акомпанементу для мелодій</li>
+                        <li>Використання різних стилів акомпанементу</li>
+                    </ul>
+                </div>
+                <hr>
+                <p><i>Урок сольфеджіо складається з:</i></p>
+                <ul>
+                    <li>теоретичної бази (25 хв)</li>
+                    <li>практичної частини (25 хв)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="formats" class="section">
+        <h2>Формати навчання</h2>
+        <div class="formats">
+            <div class="format">
+                <p><strong>Пробний</strong><br>25 хвилин<br>100 грн.</p>
+            </div>
+            <div class="format">
+                <p><strong>Індивідуальний</strong><br>45 хвилин - 1 година<br>300-400 грн.</p>
+            </div>
+            <div class="format">
+                <p><strong>Груповий</strong><br>1 година<br>200 грн.</p>
+            </div>
+            <div class="format">
+                <p><strong>Подарунковий сертифікат</strong><br>8 занять по 1 годині<br>2000 грн.</p>
+            </div>
+        </div>
+    </section>
+    <section id="signup" class="section">
+        <h2>Записатись на заняття</h2>
+        <div class="contact-info">
+            <p><strong><a href="tel:+380674005539" style="text-decoration: none; color: black;"><i class="fas fa-phone-alt"></i></a> Телефон:</strong> +380674005539</p>
+            <p><strong><a href="https://t.me/yourprofile" target="_blank" style="text-decoration: none; color: black;"><i class="fab fa-telegram"></i></a> Telegram:</strong> @maritibirkova</p>
+            <p><strong><a href="viber://chat?number=%2Byournumber" target="_blank" style="text-decoration: none; color: black;"><i class="fab fa-viber"></i></a> Viber: </strong> +380674005539</p>
+            <p><strong><a href="https://www.instagram.com/" target="_blank" style="text-decoration: none; color: black;"><i class="fab fa-instagram"></i></a> Instagram:</strong> @maria_music</p>
+            <p><strong><a href="mailto:youremail@example.com" style="text-decoration: none; color: black;"><i class="fas fa-envelope"></i></a> Email:</strong> maria@gmail.com</p>
+            <p><strong><a href="https://maps.app.goo.gl/ZBTAPHuobWtd1ej4A" target="_blank" style="text-decoration: none; color: black;"><i class="fas fa-map-marker-alt"></i></a> Адреса:</strong> с. Петропавлівська Борщагівка, Київська область</p>
+        </div>
+    </section>
+    <section id="location" class="section">
+        <h2>Місцерозташування</h2>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.2879453620614!2d30.329710278435467!3d50.433687951484195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb6beba6ab3b%3A0x23709c75813bd389!2z0JDQvNC10YLQuNGB0YIg0JzQvtC7!5e0!3m2!1suk!2sua!4v1728992931801!5m2!1suk!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer class="footer">
+        <p>Викладач: Марія Тібірькова</p>
+        <!-- <p>+380671111111</p> -->
+        <!-- <p><a href="mailto:maria@gmail.com">maria@gmail.com</a></p> -->
+        <p>Адреса: с. Петропавлівська Борщагівка, Київська область</p>
+        <div class="social-icons">
+            <a href="https://t.me/yourprofile" target="_blank" style="text-decoration: none; color: black;"><i class="fab fa-telegram"></i></a>
+            <a href="viber://chat?number=%2Byournumber" target="_blank" style="text-decoration: none; color: black;"><i class="fab fa-viber"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" style="text-decoration: none; color: black;"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:youremail@example.com" style="text-decoration: none; color: black;"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
